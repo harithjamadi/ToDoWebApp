@@ -10,7 +10,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 const PORT = process.env.PORT || 3000;
-const dbUrl = "mongodb+srv://admin:BvIGoHTolbrzaVfQ@cluster0.lgvxcjd.mongodb.net/InfinityWave?retryWrites=true&w=majority";
+const dbUrl = "mongodb+srv://<user>:<password>@cluster0.lgvxcjd.mongodb.net/InfinityWave?retryWrites=true&w=majority";
 
 mongoose.connect(dbUrl);
 
